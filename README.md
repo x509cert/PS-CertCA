@@ -2,7 +2,7 @@ Written by Michael Howard, Azure Data Platform, Microsoft Corp.
 
 Code to setup a Certificate Authority using PowerShell. This is for *experimental purposes only* so you don't need to use self-signed certificates.
 
-So long as the root CA cert is installed in the Root CA store there is no need to use TrustServerCertificate=true in SQL connection strings. This mimics a PKI hierarchy without setting up a PKI hierarchy!
+So long as the root CA cert is installed in the Root CA store of a client computer there is no need to use TrustServerCertificate=true in SQL connection strings on that client. This mimics a paid-for PKI hierarchy without setting up a paid-for PKI hierarchy!
 All you need to do is change these two lines:
 
 ```
