@@ -26,5 +26,5 @@ At it's core the code uses New-SelfSignedCertificate, which does much more than 
 You can also add Subject Altername Name(s) by adding more than one name to the $ServerName variable:
 
 ```
-$ServerName = 'frodo.hobbiton.com', 'sauron.mordor.com'
+$ServerName = 'frodo.hobbiton.com', 'bilbo.hobbiton.com'
 ````
