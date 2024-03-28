@@ -15,7 +15,7 @@ and then run the code.
 For example, for the DNS name of your server:
 
 ```
-$RootCAName = 'Bilbo's Awesome CA'
+$RootCAName = 'Bilbo''s Awesome CA'
 $ServerName = 'frodo.hobbiton.com'
 ```
 
