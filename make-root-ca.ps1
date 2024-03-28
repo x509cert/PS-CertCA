@@ -17,10 +17,10 @@ Set-StrictMode -Version Latest
 'START'
 'Creating root CA cert and private key'
 
-$RootCACertFileName = '.\RootCACert.cer'
-$RootCAName = 'Mikehow Root CA Cert'
-$ServerName = 'mikehow-atx2'
+$RootCAName = '<String naming your CA>'
+$ServerName = '<Add your server name>'
 
+$RootCACertFileName = '.\RootCACert.cer'
 $ServerCertStore = 'Cert:\CurrentUser\My'
 $RootCACertStore = 'Cert:\CurrentUser\Root'
 
