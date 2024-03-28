@@ -18,7 +18,7 @@ Set-StrictMode -Version Latest
 'Creating root CA cert and private key'
 
 $RootCAName = '<String naming your CA>'
-$ServerName = '<Add your server name>'
+$ServerName = '<Server name>', '<Alt Server name>'
 
 $RootCACertFileName = '.\RootCACert.cer'
 $ServerCertStore = 'Cert:\CurrentUser\My'
@@ -63,7 +63,8 @@ $Serverparams = @{
  
 $ServerCert = New-SelfSignedCertificate @Serverparams | Out-Null
 
+$PrimaryName = $ServerName[0]
 "The Root CA Cert is in $RootCACertStore named $RootCAName"
-"The server cert is in $ServerCertStore named $ServerName"
+"The server cert is in $ServerCertStore named $PrimaryName"
 
 'DONE'
